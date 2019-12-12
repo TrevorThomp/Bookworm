@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 // mongodb connection
-mongoose.connect('mongodb://localhost:27017/bookworm', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb://localhost:27017/bookworm', {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true});
 const db = mongoose.connection;
 
 // mongodb error
